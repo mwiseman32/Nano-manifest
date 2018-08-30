@@ -22,9 +22,9 @@
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="62dca337fe72085d98b7603cfcff1279c48ba7d9" />
         <project path="u-boot"               name="friendlyarm/u-boot.git"                revision="refs/heads/master" clone-depth="1" /> 
         
-        <default remote="gegit"/>        
-        <project path="optee_os"             name="212576259/optee_os.git"                   revision="refs/heads/master" clone-depth="1" />
-        <project path="arm-trusted-firmware" name="212576259/arm-trusted-firmware.git"       revision="refs/heads/master" clone-depth="1" />
+       # <default remote="gegit"/>        
+        <project path="optee_os"             name="mwiseman32/Nano-optee_os.git"                   revision="refs/heads/master" clone-depth="1" />
+        <project path="arm-trusted-firmware" name="mwiseman32/Nano-arm-trusted-firmware.git"       revision="refs/heads/master" clone-depth="1" />
        
         
 </manifest>
