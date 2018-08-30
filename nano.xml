@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+        <remote name="github" fetch="https://github.com" />
+        <remote name="linaro" fetch="https://git.linaro.org" />
+        <remote name="gegit" fetch="https://github.build.ge.com" />
+
+        <default remote="github" revision="master" />
+
+        <!-- OP-TEE gits -->
+        <project path="optee_client"         name="OP-TEE/optee_client.git" />
+        <project path="optee_test"           name="OP-TEE/optee_test.git" />
+        <project path="build"                name="OP-TEE/build.git">
+                <linkfile src="juno.mk" dest="build/Makefile" />
+                <linkfile src="../toolchains/aarch64/bin/aarch64-linux-gnu-gdb" dest="build/gdb" />
+        </project>
+
+        <!-- linaro-swg gits -->
+        <project path="linux"                name="friendlyarm/linux.git"                  revision="refs/heads/master" clone-depth="1" />
+        <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
+        <project path="optee_benchmark" name="linaro-swg/optee_benchmark.git"/>
+        <!-- Misc gits -->
+        <project path="buildroot"            name="buildroot/buildroot.git"               revision="62dca337fe72085d98b7603cfcff1279c48ba7d9" />
+        <project path="u-boot"               name="friendlyarm/u-boot.git"                revision="refs/heads/master" clone-depth="1" /> 
+        
+        <default remote="gegit"/>        
+        <project path="optee_os"             name="212576259/optee_os.git"                   revision="refs/heads/master" clone-depth="1" />
+        <project path="arm-trusted-firmware" name="212576259/arm-trusted-firmware.git"       revision="refs/heads/master" clone-depth="1" />
+       
+        
+</manifest>
